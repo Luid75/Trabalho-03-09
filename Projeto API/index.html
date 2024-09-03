@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body onload="carregarProdutos()">
+
+  <div class="container">
+    <div class="card">
+      <h1>Cadastro de Produto</h1>
+
+      <div class="label-float">
+        <input type="text" id="nome" required>
+        <label for="nome">Digite o nome do produto:</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="descricao" required>
+        <label for="descricao">Digite a descrição do produto:</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="preco" required>
+        <label for="preco">Digite o preço do produto:</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="qtd" required>
+        <label for="qtd">Digite a quantidade do produto:</label>
+      </div>
+
+      <button onclick="cadastrar()">Cadastrar</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="lista">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editModalLabel">Editar Produto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="label-float">
+            <input type="text" id="modalNome" required>
+            <label for="modalNome">Nome do Produto:</label>
+          </div>
+          <div class="label-float">
+            <input type="text" id="modalDescricao" required>
+            <label for="modalDescricao">Descrição:</label>
+          </div>
+          <div class="label-float">
+            <input type="text" id="modalPreco" required>
+            <label for="modalPreco">Preço:</label>
+          </div>
+          <div class="label-float">
+            <input type="text" id="modalQtd" required>
+            <label for="modalQtd">Quantidade:</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="salvarAlteracoes()">Salvar Alterações</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

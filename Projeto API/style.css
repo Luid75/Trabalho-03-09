@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url(./wallpaper4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #4b0082;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #ffffff80;
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 10%;
+    color: #4b0082;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #4b0082;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+    color: #4b0082;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #6a0dad;
+}
+
+.label-float label {
+    color: #0d009c;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #6a0dad;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #4b0082;
+    border: 2px solid #4b0082;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-out, color 0.4s ease-out;
+}
+
+button:hover {
+    background-color: #d189fb;
+    color: #2a0047;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #4b0082;
+}
+
+th {
+    background-color: #4038a0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tbody tr:hover {
+    background-color: #e4e4e4;
+}
+
+td {
+    color: #333;
+}
+
+td button {
+    border: none;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+td button.edit {
+    background-color: #FFD700;
+    color: #4b0082;
+}
+
+td button.edit:hover {
+    background-color: #FFA500;
+    color: #ffffff;
+}
+
+td button.excluir {
+    background-color: #820025;
+    color: #d8d8d8;
+}
+
+td button.excluir:hover {
+    background-color: #e70a0a;
+    color: #000000;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #4b0082;
+}
+
+th {
+    background-color: #9b92ff;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #4b0082;
+}
+
+td, th {
+    padding: 12px;
+    text-align: left;
+    color: #4b0082;
+    border: 1px solid #4b0082;
+}
+
+tbody tr:hover {
+    background-color: #e4e4e4;
+}
